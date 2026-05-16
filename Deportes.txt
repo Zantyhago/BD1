@@ -3,6 +3,6 @@ caso 6:
 futbolistas = (π cuil σ codd = 'D01' prac)
 tenistas = (π cuil σ codd = 'D10' prac)
 nadadores = (π cuil σ codd = 'D22' prac)
-(futbolistas∩tenistas∩nadadores) ⨝ π cuil, nom pers
+(futbolistas ∩ tenistas ∩ nadadores) ⨝ π cuil, nom pers
 
 caso 7:
