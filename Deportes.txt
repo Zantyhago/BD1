@@ -1,3 +1,4 @@
+caso 5: π cuil,nom,nomd,nomc (π cuil,nom (pers) ⨝ prac ⨝ depo ⨝ π codc,nomc (club))
 caso 6:
 futbolistas = (π cuil σ codd = 'D01' prac)
 tenistas = (π cuil σ codd = 'D10' prac)
