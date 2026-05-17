@@ -6,3 +6,5 @@ nadadores = (π cuil σ codd = 'D22' prac)
 (futbolistas ∩ tenistas ∩ nadadores) ⨝ π cuil, nom pers
 
 caso 7:
+cuils = (π cuil pers - π cuil (σ codc = 'C01' prac))
+π cuil,nom (pers ⨝ cuils)
