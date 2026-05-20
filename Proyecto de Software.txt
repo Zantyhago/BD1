@@ -1,3 +1,10 @@
+Caso 1:
+Tipos = π tipo vehi
+Cuits = π cuit,tipo vehi
+D = Cuits/Tipos
+π nomC (D⨝compseg)
+
+
 DataSet:
 group:ProyectosSoftgroup:ProyectosSoftware
 proyectos = {codp:string,nomp:string,cliente:string,fInicio:date,lider:string
