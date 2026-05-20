@@ -9,6 +9,13 @@ Accis = π pat invo
 Fatales = π pat (σ danioPersona = 'fatal' invo)
 π pat,modelo (vehi⨝(Accis - Fatales))
 
+caso 3:
+
+caso 4:
+leves = π dni (σ danioPersona ='leve' invo)
+sinDano = π dni (σ danioPersona ='sin daño' invo)
+π dni,nom (pers ⨝ (leves ∩ sinDano))
+
 DataSet:
 group:ProyectosSoftgroup:ProyectosSoftware
 proyectos = {codp:string,nomp:string,cliente:string,fInicio:date,lider:string
