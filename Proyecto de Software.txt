@@ -4,6 +4,10 @@ Cuits = π cuit,tipo vehi
 D = Cuits/Tipos
 π nomC (D⨝compseg)
 
+Caso 2:
+Accis = π pat invo
+Fatales = π pat (σ danioPersona = 'fatal' invo)
+π pat,modelo (vehi⨝(Accis - Fatales))
 
 DataSet:
 group:ProyectosSoftgroup:ProyectosSoftware
