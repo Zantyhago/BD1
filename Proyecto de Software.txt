@@ -16,6 +16,10 @@ leves = π dni (σ danioPersona ='leve' invo)
 sinDano = π dni (σ danioPersona ='sin daño' invo)
 π dni,nom (pers ⨝ (leves ∩ sinDano))
 
+caso 5:
+patentes = π pat (σ conductor = 'si' invo)
+π pat ((π pat (σ tipo = 'Auto/Camioneta' vehi)) ⨝ patentes)
+
 DataSet:
 group:ProyectosSoftgroup:ProyectosSoftware
 proyectos = {codp:string,nomp:string,cliente:string,fInicio:date,lider:string
