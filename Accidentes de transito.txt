@@ -20,6 +20,11 @@ caso 5:
 patentes = π pat (σ conductor = 'si' invo)
 π pat ((π pat (σ tipo = 'Auto/Camioneta' vehi)) ⨝ patentes)
 
+caso 6:
+patentes = π pat (σ conductor = 'si' invo)
+π dni,nom (pers ⨝ patentes)
+
+DataSet:
 group:AccidentesTransito
 compseg = {cuit:string,nomC:string,domi:string,tel:string
 '30123456789','Seguros Unidos','Av. Libertador 1000','1122334455'
