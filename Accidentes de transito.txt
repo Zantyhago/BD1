@@ -1,0 +1,63 @@
+Caso 1:
+Tipos = π tipo vehi
+Cuits = π cuit,tipo vehi
+D = Cuits/Tipos
+π nomC (D⨝compseg)
+
+Caso 2:
+Accis = π pat invo
+Fatales = π pat (σ danioPersona = 'fatal' invo)
+π pat,modelo (vehi⨝(Accis - Fatales))
+
+caso 3:
+
+caso 4:
+leves = π dni (σ danioPersona ='leve' invo)
+sinDano = π dni (σ danioPersona ='sin daño' invo)
+π dni,nom (pers ⨝ (leves ∩ sinDano))
+
+caso 5:
+patentes = π pat (σ conductor = 'si' invo)
+π pat ((π pat (σ tipo = 'Auto/Camioneta' vehi)) ⨝ patentes)
+
+group:AccidentesTransito
+compseg = {cuit:string,nomC:string,domi:string,tel:string
+'30123456789','Seguros Unidos','Av. Libertador 1000','1122334455'
+'30987654321','Protección Total','Calle San Martín 500','2233445566'
+'30456789123','Seguridad Vial','Av. España 800','3344556677'}
+
+vehi = {pat:string,modelo:string,tipo:string,cuit:string,marca:string,dni:string
+'ABC123','2020','Auto/Camioneta','30123456789','Toyota','20111111111'
+'DEF456','2019','Moto','30123456789','Honda','20111111111'
+'GHI789','2021','Camión','30123456789','Mercedes','20222222222'
+'JKL012','2018','Auto/Camioneta','30987654321','Ford','20333333333'
+'MNO345','2022','Moto','30987654321','Yamaha','20333333333'
+'PQR678','2020','Auto/Camioneta','30456789123','Chevrolet','20444444444'
+'STU901','2021','Moto','30456789123','Kawasaki','20555555555'
+'VWX234','2019','Camión','30987654321','Scania','20666666666'
+'VDJ752','2018','Auto/Camioneta','30456789123','Lexus','20666666666'}
+
+pers = {dni:string,nom:string,edad:number,domi:string,tel:string
+'20111111111','Juan Pérez',35,'Calle A 123','9988776655'
+'20222222222','María López',42,'Calle B 456','8877665544'
+'20333333333','Carlos Gómez',28,'Calle C 789','7766554433'
+'20444444444','Ana Martínez',31,'Calle D 012','6655443322'
+'20555555555','Roberto Sánchez',45,'Calle E 345','5544332211'
+'20666666666','Laura Fernández',39,'Calle F 678','4433221100'}
+
+acta = {nroActa:number,lugar:string,fecha:date,hora:string
+1,'Av. Libertador y San Martín',2023-05-10,'08:30'
+2,'Calle España y Mitre',2023-06-15,'14:45'
+3,'Av. Las Heras y Sarmiento',2023-07-20,'19:20'
+4,'Calle Rivadavia y Laprida',2023-08-25,'22:10'}
+
+invo = {nroActa:number,pat:string,dni:string,conductor:string,danioPersona:string
+1,'ABC123','20111111111','si','leve'
+1,'JKL012','20333333333','si','sin daño'
+2,'DEF456','20111111111','si','sin daño'
+2,'MNO345','20444444444','si','leve'
+2,'MNO345','20555555555','no','grave'
+3,'GHI789','20222222222','si','fatal'
+3,'PQR678','20444444444','si','grave'
+4,'ABC123','20111111111','si','leve'
+4,'STU901','20555555555','si','leve'}
